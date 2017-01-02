@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<!--
+This project gave me a bit of a headache. First I struggled to create a grid of divs without copying and pasting. I figured that out, and I found the hover effect to be easy. But then I really struggled with resizing the div. I had an idea about storing the size of the grid/blocks in variables, but I felt like I was going about it the wrong way. I did some more searching, and I found this codepen: http://codepen.io/prestonhalley/pen/jWdvvz by Preston Halley. His project showed me how to update the grid size while keeping the blocks inside of the container. Here is my first attempt: http://codepen.io/pat878/pen/PWYazp. Thank you, Preston Halley, for showing me the light!
+-->
+
+<html lang="en">
+
+<head>
+
+  <title>Etch-A-Sketch</title>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript" src="script.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <center>
+      <h1>Etch-A-Sketch!</h1>
+      <button class="btn btn-primary reset">Clear</button>
+
+<button onclick="gridsize()" class="btn btn-primary newgrid">New Grid</button>
+
+      <div id="container"></div>
+    </center>
+
+  </div>
+
+</body>
+
+</html>
